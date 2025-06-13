@@ -40,7 +40,7 @@ export default function Home() {
   return (
     <div className={classes.homeContainer}>
       {/* HERO */}
-      <section className={classes.textContainer}>
+      <section className={classes.textContainer} data-aos="fade-up">
         <h1>Matériel et consommables dentaires professionnels</h1>
 
         <p>
@@ -56,7 +56,7 @@ export default function Home() {
       </section>
 
       {/* AVANTAGES */}
-      <article className={classes.cardArticle}>
+      <article className={classes.cardArticle} data-aos="fade-up" data-aos-delay="200">
         <h2>Pourquoi nous choisir&nbsp;?</h2>
         <div className={classes.cardContainer}>
           {cards.map((card, index) => (
@@ -76,10 +76,12 @@ export default function Home() {
       </article>
 
       {/* CATEGORIES */}
-      <BrowseCategory title="Parcourir les catégories" />
+      <div data-aos="fade-up" data-aos-delay="400">
+        <BrowseCategory title="Parcourir les catégories" />
+      </div>
 
       {/* CONTACT (ancre liée à la navbar) */}
-      <section id="contact" className={classes.contactSection}>
+      <section id="contact" className={classes.contactSection} data-aos="fade-up" data-aos-delay="600">
         <h2>Contact</h2>
         <p>📍 12 rue de l’Odonto – 75000 Paris</p>
         <p>☎ 09 88 77 66 55</p>

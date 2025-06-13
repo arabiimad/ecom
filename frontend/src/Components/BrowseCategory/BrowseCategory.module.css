@@ -30,9 +30,11 @@
 }
 
 
+
 .category {
   width: 35%;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 .image {
@@ -41,4 +43,8 @@
   margin-left: auto;
   height: auto;
   border-radius: 5px;
+}
+
+.category:hover {
+  transform: translateY(-5px);
 }

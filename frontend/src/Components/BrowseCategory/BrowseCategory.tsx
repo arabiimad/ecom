@@ -37,7 +37,12 @@ export default function BrowseCategory({ title }: Props) {
       <div className={classes.categoriesContainer}>
         {categories.map((category, index) => {
           return (
-            <div key={index} className={classes.category}>
+            <div
+              key={index}
+              className={classes.category}
+              data-aos="zoom-in-up"
+              data-aos-delay={index * 100}
+            >
               <img
                 className={classes.image}
                 src={category.image}
