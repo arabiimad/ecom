@@ -16,6 +16,7 @@ export const AllProductsLoader: LoaderFunction = async () => {
     const data = await response.json();
     return data;
   } catch (err) {
-    return null;
+    console.error(err);
+    return [];
   }
 };

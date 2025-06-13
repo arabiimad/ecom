@@ -4,8 +4,8 @@ import classes from "./Home.module.css";
 
 import ceSvg from "../../assets/quality.svg";        // à remplacer par un pictogramme CE
 import truckSvg from "../../assets/car.svg";        // livraison
-import supportSvg from "../../assets/support.svg";  // crée ou importe un SVG
-import stockSvg from "../../assets/stock.svg";      // stock réel
+import supportSvg from "../../assets/person.svg";  // placeholder icon for support
+import stockSvg from "../../assets/restocking.jpg";      // placeholder stock
 
 import BrowseCategory from "../BrowseCategory/BrowseCategory";
 
@@ -40,7 +40,7 @@ export default function Home() {
   return (
     <div className={classes.homeContainer}>
       {/* HERO */}
-      <section className={classes.textContainer}>
+      <section className={classes.textContainer} data-aos="fade-up">
         <h1>Matériel et consommables dentaires professionnels</h1>
 
         <p>
@@ -49,14 +49,14 @@ export default function Home() {
           disponible en un clic et conforme aux normes européennes.
         </p>
 
-        {/* CTA vers la boutique (respecte ton basename “/E-commerce”) */}
-        <a href="/E-commerce/shop" className={classes.ctaButton}>
+        {/* CTA vers la boutique */}
+        <a href="/shop" className={classes.ctaButton}>
           Accéder à la boutique
         </a>
       </section>
 
       {/* AVANTAGES */}
-      <article className={classes.cardArticle}>
+      <article className={classes.cardArticle} data-aos="fade-up" data-aos-delay="200">
         <h2>Pourquoi nous choisir&nbsp;?</h2>
         <div className={classes.cardContainer}>
           {cards.map((card, index) => (
@@ -76,10 +76,12 @@ export default function Home() {
       </article>
 
       {/* CATEGORIES */}
-      <BrowseCategory title="Parcourir les catégories" />
+      <div data-aos="fade-up" data-aos-delay="400">
+        <BrowseCategory title="Parcourir les catégories" />
+      </div>
 
       {/* CONTACT (ancre liée à la navbar) */}
-      <section id="contact" className={classes.contactSection}>
+      <section id="contact" className={classes.contactSection} data-aos="fade-up" data-aos-delay="600">
         <h2>Contact</h2>
         <p>📍 12 rue de l’Odonto – 75000 Paris</p>
         <p>☎ 09 88 77 66 55</p>

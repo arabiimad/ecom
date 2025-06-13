@@ -18,6 +18,22 @@
   text-align: left;
 }
 
+.ctaButton {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background-color: #3498db;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: #2980b9;
+  transform: translateY(-3px);
+}
+
 .cardArticle {
   text-align: center;
   margin: auto;
@@ -132,4 +148,11 @@
 .read {
   font-weight: 800;
   color: #e74c3c; /* Couleur rouge pour correspondre à la navbar */
+}
+
+.contactSection {
+  margin-top: 4rem;
+  text-align: center;
+  background: #f9f9f9;
+  padding: 2rem 0;
 }

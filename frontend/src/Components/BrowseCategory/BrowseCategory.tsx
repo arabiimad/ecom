@@ -1,25 +1,25 @@
 import { useNavigate } from "react-router-dom";
 import classes from "./BrowseCategory.module.css";
-import OtherClothes from "../../assets/OtherClothes.jpg";
-import WomenClothes from "../../assets/WomenClothes.jpg";
-import MenClothes from "../../assets/MenClothes.jpg";
-import BabyClothes from "../../assets/BabyClothes.jpg";
+import InstrumentsImg from "../../assets/Instruments.png";
+import ConsumablesImg from "../../assets/Consumables.png";
+import EquipmentImg from "../../assets/Equipment.png";
+import ProstheticsImg from "../../assets/Prosthetics.png";
 const categories = [
   {
-    name: "Men Clothes",
-    image: MenClothes,
+    name: "Instruments",
+    image: InstrumentsImg,
   },
   {
-    name: "Women Clothes",
-    image: WomenClothes,
+    name: "Consumables",
+    image: ConsumablesImg,
   },
   {
-    name: "Baby Clothes",
-    image: BabyClothes,
+    name: "Equipment",
+    image: EquipmentImg,
   },
   {
-    name: "Other Clothes",
-    image: OtherClothes,
+    name: "Prosthetics",
+    image: ProstheticsImg,
   },
 ];
 
@@ -36,7 +36,12 @@ export default function BrowseCategory({ title }: Props) {
       <div className={classes.categoriesContainer}>
         {categories.map((category, index) => {
           return (
-            <div key={index} className={classes.category}>
+            <div
+              key={index}
+              className={classes.category}
+              data-aos="zoom-in-up"
+              data-aos-delay={index * 100}
+            >
               <img
                 className={classes.image}
                 src={category.image}

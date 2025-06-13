@@ -1,11 +1,16 @@
-import { Suspense } from "react";
+import { Suspense, useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import classes from "./RootLayout.module.css";
 import Navbar from "../NavBar/Navbar";
 import Footer from "../Footer/Footer";
 import Notification from "../../UI/Notification/Notification";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function RootLayout() {
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
   return (
     <>
       <header>

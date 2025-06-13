@@ -5,7 +5,7 @@ import cart from "../../../assets/cart.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState,AppDispatch } from "../../../store/redux-store";
 import { useEffect } from "react";
-import { restoratUser } from "../../../store/auth-slice";
+import { restoreUser } from "../../../store/auth-slice";
 import {isTokenExpired} from "../../../Services/decodeToken"
 export default function Navbar() {
   // Utiliser le hook `useNavigate` pour la redirection
@@ -19,28 +19,18 @@ export default function Navbar() {
   useEffect(() => {
     if (!user) {
       // Restaurer l'utilisateur si ce n'est pas encore fait
-      dispatch(restoratUser());
+      dispatch(restoreUser());
     }
   }, [dispatch, user]);
 
   // Gérer la redirection en fonction de l'état de connexion
-  const handleProfileClick = () => {
+  const handleProfileClick = async () => {
     if (user) {
-      navigate("/myAccount"); // Rediriger vers la page profil si connecté
+      navigate("/myAccount");
+    } else if (token && !isTokenExpired(token)) {
+      await dispatch(restoreUser());
+      navigate("/myAccount");
     } else {
-      if(token && !isTokenExpired(token))
-      {
-        useEffect(() => {
-          if (!user) {
-            // Restaurer l'utilisateur si ce n'est pas encore fait
-            dispatch(restoratUser());
-          }
-        }, [dispatch, user]);
-      }
-      if(user){
-        navigate("/myAccount");
-      }
-      
       navigate("/auth");
     }
   };
@@ -49,7 +39,7 @@ export default function Navbar() {
     <nav className={classes.nav}>
       <Link to="/" className={classes.link}>
         <h1 className={classes.h1}>
-          E-<span className={classes.rgb}>Commerce</span>
+          Denta<span className={classes.rgb}>Shop</span>
         </h1>
       </Link>
       <div className={classes.navMenu}>
@@ -71,18 +61,14 @@ export default function Navbar() {
           }
           to="/shop"
         >
-          Shop
+          Boutique
         </NavLink>
-        <NavLink
-          className={({ isActive }) =>
-            isActive
-              ? `${classes.active} ${classes.link} ${classes.navItem}`
-              : `${classes.link} ${classes.navItem}`
-          }
-          to="/contactUs"
+        <Link
+          className={`${classes.link} ${classes.navItem}`}
+          to="/#contact"
         >
-          Contact Us
-        </NavLink>
+          Contact
+        </Link>
 
         {user && (
         <NavLink

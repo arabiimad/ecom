@@ -9,7 +9,7 @@ interface LoaderData {
     products: Product[];
   }
 
-export default function orderDetailsPage() {
+export default function OrderDetailsPage() {
     const  data = useLoaderData() as LoaderData;
     const order= data.order;
     const paid= data.paid;

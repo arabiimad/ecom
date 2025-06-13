@@ -2,7 +2,7 @@ import  { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { getUserOrder, isPaid } from '../../../Services/orderService';
-import { restoratUser } from '../../../store/auth-slice';
+import { restoreUser } from '../../../store/auth-slice';
 import { AppDispatch, RootState } from '../../../store/redux-store';
 import OrderItem from '../OrderItem/OrderItem';
 import { OrderResponse } from '../../../types';
@@ -19,7 +19,7 @@ export default function AllOrders() {
         const fetchOrders = async () => {
             try {
                 if (!user) {
-                    await dispatch(restoratUser());
+                    await dispatch(restoreUser());
                 }
 
                 if (user) {
