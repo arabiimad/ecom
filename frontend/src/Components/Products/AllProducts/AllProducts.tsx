@@ -16,25 +16,26 @@ export default function AllProducts(props: Props) {
   const filterChangeHandler = (e: ChangeEvent<HTMLSelectElement>) => {
     setFilter(e.target.value);
   };
-  let sorted: Product[] = [];
+  const data = props.data ?? [];
+  let sorted: Product[] = [...data];
   switch (filter) {
     case "PLTH":
-      sorted = props.data.sort((a, b) => a.price - b.price);
+      sorted = [...data].sort((a, b) => a.price - b.price);
       break;
     case "PHTL":
-      sorted = props.data.sort((a, b) => b.price - a.price);
+      sorted = [...data].sort((a, b) => b.price - a.price);
       break;
     case `RLTH`:
-      sorted = props.data.sort((a, b) => a.availableQuantity - b.availableQuantity);
+      sorted = [...data].sort((a, b) => a.availableQuantity - b.availableQuantity);
       break;
     case `RHTL`:
-      sorted = props.data.sort((a, b) => b.availableQuantity - a.availableQuantity);
+      sorted = [...data].sort((a, b) => b.availableQuantity - a.availableQuantity);
       break;
     default:
-      sorted = props.data.sort(() => 0.5 - Math.random());
+      sorted = [...data].sort(() => 0.5 - Math.random());
   }
 
-  const [products] = useState<Product[]>(sorted);
+  const products = sorted;
 
   const navigate = useNavigate();
 

@@ -19,15 +19,14 @@ export const CategoryProductsLoader: LoaderFunction = async ({ params }) => {
     throw new Error("unrecognized category");
   }
   try {
-    const response = await fetch(
-      `/api/v1/products/${endpoint}`
-    );
+    const response = await fetch(`/api/v1/products/${endpoint}`);
     if (!response.ok) {
       throw new Error(`Error ${response.status}: ${response.statusText}`);
     }
     const data = await response.json();
     return { data, category };
   } catch (err) {
-    console.log(err);
+    console.error(err);
+    return { data: [], category };
   }
 };
