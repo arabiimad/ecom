@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import { LoaderFunction } from "react-router-dom";
 import Authentication from "../Components/Authentication/Authentication";
 

@@ -69,7 +69,7 @@ export default function Registration() {
     }
 
     try{
-      const response = await dispatch(register({
+      await dispatch(register({
       firstname,
       lastname,
       email,

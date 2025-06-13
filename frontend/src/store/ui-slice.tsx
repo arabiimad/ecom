@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { NotificationType } from "../types";
 
-let initialState: {
+const initialState: {
   notifications: NotificationType[];
   toggleNav: boolean;
 } = {
