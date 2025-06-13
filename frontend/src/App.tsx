@@ -28,6 +28,14 @@ const router = createBrowserRouter(
           Component: lazy(() => import("./Pages/HomePage")),
         },
         {
+          path: "/about",
+          Component: lazy(() => import("./Pages/AboutPage")),
+        },
+        {
+          path: "/contact",
+          Component: lazy(() => import("./Pages/ContactUsPage")),
+        },
+        {
           path: "/shop",
           loader: () => redirect("/shop/category/all"),
         },
