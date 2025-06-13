@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "../../store/redux-store";
-import { restoratUser, logout } from "../../store/auth-slice";
+import { restoreUser, logout } from "../../store/auth-slice";
 import { useNavigate } from "react-router-dom";
 import { uiActions } from "../../store/ui-slice";
 import Card from "../UI/Card/Card";
@@ -17,7 +17,7 @@ const UserDetails = () => {
   useEffect(() => {
     if (!user) {
       // Restaurer l'utilisateur si ce n'est pas encore fait
-      dispatch(restoratUser());
+      dispatch(restoreUser());
     }
   }, [dispatch, user]);
 
