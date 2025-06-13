@@ -39,7 +39,7 @@ export default function Navbar() {
     <nav className={classes.nav}>
       <Link to="/" className={classes.link}>
         <h1 className={classes.h1}>
-          E-<span className={classes.rgb}>Commerce</span>
+          Denta<span className={classes.rgb}>Shop</span>
         </h1>
       </Link>
       <div className={classes.navMenu}>
@@ -63,16 +63,12 @@ export default function Navbar() {
         >
           Boutique
         </NavLink>
-        <NavLink
-          className={({ isActive }) =>
-            isActive
-              ? `${classes.active} ${classes.link} ${classes.navItem}`
-              : `${classes.link} ${classes.navItem}`
-          }
-          to="/contactUs"
+        <Link
+          className={`${classes.link} ${classes.navItem}`}
+          to="/#contact"
         >
-          Contact Us
-        </NavLink>
+          Contact
+        </Link>
 
         {user && (
         <NavLink

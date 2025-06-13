@@ -4,7 +4,8 @@ import react from "@vitejs/plugin-react";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/E-commerce",
+  // Run the app from the root path rather than a subdirectory
+  base: "/",
   server: {
     proxy: {
       '/api':'http://localhost:8555'

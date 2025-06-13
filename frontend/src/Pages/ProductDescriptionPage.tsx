@@ -10,10 +10,10 @@ export const singleProductLoader: LoaderFunction = async ({ params }) => {
   const category = params.categoryName;
   let endpoint = "";
   if (
-    category === "Men Clothes" ||
-    category === "Baby Clothes" ||
-    category === "Women Clothes" ||
-    category === "Other Clothes"
+    category === "Instruments" ||
+    category === "Equipment" ||
+    category === "Consumables" ||
+    category === "Prosthetics"
   ) {
     endpoint = `category/name/${category}`;
   } else {
