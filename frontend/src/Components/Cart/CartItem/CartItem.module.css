@@ -1,0 +1,27 @@
+/* CartItem.module.css */
+.image {
+  width: 25%;
+  height: auto;
+  cursor: pointer;
+}
+
+.itemTitle {
+  cursor: pointer;
+}
+
+.itemContainer {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: start;
+  max-height: 280px;
+}
+
+.detailsContainer {
+  width: 55%;
+}
+
+.delBtn {
+  padding: 5px;
+  margin-left: 0.5rem;
+  background-color: red;
+}

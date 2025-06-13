@@ -1,0 +1,82 @@
+.productContainer {
+  width: 16%; /* Largeur réduite de la carte de produit de 25% */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre légère pour profondeur */
+  border-radius: 8px; /* Coins arrondis */
+  overflow: hidden; /* Cache le contenu qui dépasse */
+  max-width: 240px; /* Largeur maximale réduite */
+  margin: 0; /* Supprimer l'espace entre les cartes */
+}
+
+.image {
+  width: 100%;
+  height: 220px; /* Augmenter la hauteur de l'image de manière significative */
+  object-fit: cover; /* Couvre le cadre sans déformation */
+  border-bottom: 2px solid #3498db; /* Bordure inférieure */
+}
+
+.priceRating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem; /* Padding réduit pour minimiser l'espace */
+}
+
+.price {
+  margin-left: 0.5rem;
+  font-size: 1.2rem; /* Taille de police réduite */
+  font-weight: 500;
+  color: #e74c3c; /* Couleur en accord avec le thème */
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column; /* Boutons alignés verticalement */
+  align-items: center; /* Boutons centrés horizontalement */
+  gap: 0.5rem; /* Espacement réduit entre les boutons */
+  margin-top: 0.5rem; /* Espacement réduit au-dessus des boutons */
+}
+
+.red {
+  background-color: #e74c3c; /* Couleur en accord avec le thème */
+  color: #fff; /* Texte blanc */
+  width: 100%; /* Largeur complète */
+}
+
+.seeDetailsBtn {
+  background-color: #3498db; /* Couleur en accord avec le thème */
+  color: #fff; /* Texte blanc */
+  width: 100%; /* Largeur complète */
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap; /* Les cartes s'enroulent si nécessaire */
+  justify-content: space-between; /* Alignement avec espace uniforme */
+  gap: 0; /* Supprimer l'espace entre les cartes */
+  margin: 0 auto; /* Centrer le conteneur */
+  max-width: 1200px; /* Largeur maximale */
+}
+
+@media (max-width: 897px) {
+  .productContainer {
+    width: 24%; /* Largeur ajustée pour petits écrans */
+  }
+}
+
+@media (max-width: 600px) {
+  .productContainer {
+    width: 100%; /* Largeur ajustée pour très petits écrans */
+  }
+}

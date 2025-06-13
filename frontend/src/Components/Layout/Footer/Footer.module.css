@@ -1,0 +1,105 @@
+.footer {
+  background-color: #3498db; /* Couleur de fond identique à la navbar */
+  color: #ffffff; /* Couleur du texte */
+  padding: 1rem 2rem; /* Réduit l'espacement pour diminuer la hauteur */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h1 {
+  font-family: 'Montserrat', sans-serif; /* Utilisation de la même police que la navbar */
+  font-size: 1.8rem;
+  margin: 0;
+  color: #ffffff; /* Couleur du texte principal */
+  text-decoration: underline; /* Ajout du soulignement */
+}
+
+.red {
+  color: #34495e; /* Couleur rouge */
+}
+
+.link {
+  color: #ffffff; /* Couleur des liens */
+  text-decoration: none;
+  margin: 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #ecf0f1; /* Couleur de survol */
+}
+
+.upperContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 1rem 0; /* Ajout d'espacement entre les sections */
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+.columnHeading {
+  font-size: 1.2rem; /* Réduit la taille des titres */
+  margin-bottom: 0.5rem;
+  color: #ecf0f1; /* Couleur des titres des colonnes */
+  text-decoration: underline; /* Ajout du soulignement */
+}
+
+.newsLetter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem; /* Ajout d'espacement pour séparer du reste */
+}
+
+.subEmailInput {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+.subBtn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #34495e; /* Couleur du bouton */
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subBtn:hover {
+  background-color: #34495e; /* Couleur au survol */
+}
+
+.divider {
+  width: 100%; /* Largeur du point */
+  height: 2px; /* Hauteur du point */
+  background-color: #ffffff; /* Couleur blanche pour le point */
+  border-radius: 100%; /* Rend le point rond */
+  display: block;
+}
+
+
+
+.credits {
+  margin-top: 1rem;
+}
+
+.name {
+  color: #ecf0f1; /* Couleur des crédits */
+  text-decoration: none;
+}
+
+.name:hover {
+  color: #ffffff; /* Couleur au survol */
+  text-decoration: underline;
+}

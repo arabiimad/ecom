@@ -1,0 +1,59 @@
+.Itemcontainer {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.imageContainer {
+  width: 30%; /* Légèrement agrandi pour mieux équilibrer avec le texte */
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  max-height: 400px; /* Hauteur ajustée pour plus de flexibilité */
+  border: 1px solid #3498db; /* Bordure réduite et colorée pour correspondre au thème */
+  border-radius: 5px; /* Coins légèrement arrondis */
+}
+
+.details {
+  width: 50%;
+}
+
+.details h1 {
+  font-weight: 600;
+}
+
+.details p {
+  font-size: 1.2rem;
+}
+
+.moreItems {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.moreItems h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.red {
+  background-color: #e74c3c;
+  margin-left: 30PX;
+  /* Couleur mise à jour pour correspondre au thème */
+}
+
+.capitalize {
+  color: #e74c3c; /* Couleur mise à jour pour correspondre au thème */
+  text-transform: capitalize;
+}
+
+.moreContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem; /* Espacement entre les cartes des produits ajusté */
+}

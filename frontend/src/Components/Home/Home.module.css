@@ -1,0 +1,135 @@
+.textContainer {
+  text-align: center;
+  margin: auto;
+  width: 80%; /* Augmenter la largeur pour plus d'espace */
+  margin-bottom: 4rem; /* Augmenter l'espacement inférieur */
+}
+
+.textContainer h1 {
+  font-weight: 400;
+  font-size: 3rem;
+  color: #3498db; /* Couleur de texte en accord avec la navbar */
+}
+
+.textContainer p {
+  font-size: 1.3rem; /* Augmenter la taille de police pour plus de lisibilité */
+  color: #2c3e50; /* Couleur de texte sombre pour une bonne lisibilité */
+  line-height: 1.6;
+  text-align: left;
+}
+
+.cardArticle {
+  text-align: center;
+  margin: auto;
+  width: 90%;
+}
+
+.cardArticle h2 {
+  font-weight: 500;
+  font-size: 2.5rem; /* Augmenter la taille de la police pour plus de visibilité */
+  color: #3498db; /* Couleur en accord avec la navbar */
+  margin-bottom: 2rem;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 100%;
+  max-width: 1200px; /* Limite la largeur maximale du conteneur des cartes */
+}
+
+.card {
+  text-align: center;
+  width: 24%; /* Ajuste la largeur des cartes pour qu'elles s'affichent en ligne */
+  box-sizing: border-box; /* Inclut les bordures et le padding dans la largeur */
+}
+
+
+.svgContainer {
+  width: 2.5rem; /* Augmenter la taille pour plus de visibilité */
+  height: 2.5rem;
+  background-color: #3498db; /* Couleur en accord avec la navbar */
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 0.8rem;
+}
+
+.card {
+  text-align: center;
+  width: 22%; /* Ajuster la largeur pour une meilleure disposition */
+}
+
+.card h3 {
+  font-weight: 500;
+  margin-bottom: 0;
+  color: #2c3e50; /* Couleur sombre pour une bonne lisibilité */
+}
+
+.svg {
+  width: 2.5rem; /* Augmenter la taille pour plus de visibilité */
+  height: 2.5rem;
+}
+
+.journal {
+  margin-top: 2rem; /* Augmenter l'espacement supérieur */
+  background-color: #f0f8ff; /* Couleur blanche mélangée avec du bleu clair */
+  height: 25rem; /* Ajuster la hauteur pour correspondre au design moderne */
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 4rem; /* Augmenter l'espacement inférieur */
+}
+
+.middle,
+.right,
+.left {
+  width: 30%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.left {
+  width: 25%;
+  height: 70%;
+  justify-content: space-evenly;
+}
+
+.journalBtn {
+  border-radius: 4px;
+  padding: 1rem;
+  background-color: #3498db; /* Couleur en accord avec la navbar */
+  text-transform: uppercase;
+  color: #fff; /* Texte blanc pour contraster avec le fond */
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.journalBtn:hover {
+  background-color: #2980b9; /* Couleur de survol en accord avec la navbar */
+}
+
+.image {
+  max-width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  height: auto;
+  border-radius: 5px;
+  border: 2px solid #3498db; /* Bordure en accord avec la navbar */
+}
+
+.imageCaption {
+  margin-top: 0;
+  color: #2c3e50; /* Couleur sombre pour une bonne lisibilité */
+}
+
+.read {
+  font-weight: 800;
+  color: #e74c3c; /* Couleur rouge pour correspondre à la navbar */
+}

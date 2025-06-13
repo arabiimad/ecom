@@ -1,0 +1,23 @@
+/* AllOrders.module.css */
+.orderList {
+  display: flex;
+  flex-direction: column; /* Change l'orientation en verticale */
+  overflow-y: auto; /* Permet de faire défiler verticalement si nécessaire */
+  padding: 1rem;
+  gap: 1rem; /* Espace entre les éléments de la liste */
+  background-color: #f4f6f9; /* Couleur de fond légère pour la liste */
+  border-radius: 8px; /* Coins arrondis pour un aspect plus doux */
+}
+
+.orderList::-webkit-scrollbar {
+  width: 8px; /* Largeur de la scrollbar verticale */
+}
+
+.orderList::-webkit-scrollbar-thumb {
+  background-color: #3498db; /* Couleur de la scrollbar (bleu ciel) */
+  border-radius: 4px;
+}
+
+.orderList::-webkit-scrollbar-thumb:hover {
+  background-color: #2980b9; /* Couleur de la scrollbar au survol (bleu plus foncé) */
+}

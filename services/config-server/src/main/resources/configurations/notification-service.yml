@@ -1,0 +1,43 @@
+spring:
+  data:
+    mongodb:
+      username: ayoub
+      password: ayoub
+      host: localhost
+      port: 27017
+      database: notification
+      authentication-database: admin
+
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+      auto-offset-reset: earliest
+      group-id: paymentGroup, orderGroup
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: '*'
+        spring.json.type.mapping: orderConfirmation:com.ayoub.ecommerce.kafka.order.OrderConfirmation,paymentConfirmation:com.ayoub.ecommerce.kafka.payment.PaymentConfirmation
+
+
+
+  mail:
+    host: localhost
+    port: 1025
+    username: ayoub
+    password: ayoub
+    properties:
+      mail:
+        smtp:
+          trust: "*"
+        auth: true
+        starttls:
+          enabled: true
+        connectiontimeout: 5000
+        timeout: 3000
+        writhtimeout: 5000
+
+
+
+server:
+  port: 8040

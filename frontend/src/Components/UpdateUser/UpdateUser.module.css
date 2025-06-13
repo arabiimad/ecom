@@ -1,0 +1,110 @@
+/* Form.module.css */
+
+/* Container */
+.container {
+  display: block;
+  width: 100%;
+  max-width: 500px; /* Réduit la largeur maximale du conteneur */
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+/* Form Heading */
+h1 {
+  font-size: 1.75rem; /* Réduit la taille de la police pour un formulaire plus compact */
+  color: #111;
+  margin-bottom: 1.25rem; /* Réduit l'espacement sous le titre */
+}
+
+h2 {
+  margin-bottom: 1.125rem; /* 1.5rem réduit de 25% */
+  color: #555;
+  font-size: 0.975rem; /* 1.3rem réduit de 25% */
+  font-weight: 600;
+  text-align: start;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Fieldset */
+fieldset {
+  margin-bottom: 1rem; /* Réduit l'espacement sous les fieldsets */
+  border: none;
+  display: flex;
+  flex-direction: column; /* Aligne les éléments à la verticale */
+}
+
+/* Label */
+label {
+  font-size: 0.85rem; /* Taille de police légèrement réduite */
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 0.25rem; /* Réduit l'espacement sous les labels */
+  text-align: left; /* Aligne le texte des labels à gauche */
+}
+
+/* Input */
+input {
+  width: 92%; /* Largeur des inputs ajustée */
+  padding: 0.75rem; /* Réduit le padding pour un formulaire plus compact */
+  font-size: 0.9rem; /* Taille de police légèrement réduite */
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 1rem; /* Ajoute un espacement sous les inputs */
+}
+
+input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 8px #165d8d;
+  background-color: #fff;
+}
+
+/* Button */
+button {
+  width: 100%; /* Prend toute la largeur disponible */
+  max-width: 120px; /* Réduit la largeur maximale du bouton */
+  margin: 1rem auto 0;
+  background-color: #3498db;
+  color: white;
+  padding: 0.5rem 1.2rem; /* Réduit le padding pour un bouton plus compact */
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 0.75rem; /* Taille de police légèrement réduite */
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 7.5px 15px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: translateY(-3px); /* Réduit le décalage au survol */
+  box-shadow: 0 11.25px 22.5px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  background-color: #3498db;
+  transform: translateY(0);
+}
+
+/* Card */
+.card {
+  width: 100%;
+  max-width: 500px; /* Réduit la largeur maximale de la carte */
+  padding: 1.5rem; /* Réduit le padding pour un formulaire plus compact */
+  background-color: #fff;
+  box-shadow: 0 11.25px 22.5px rgba(0, 0, 0, 0.1);
+  border-radius: 9px;
+  margin: 0 auto;
+}

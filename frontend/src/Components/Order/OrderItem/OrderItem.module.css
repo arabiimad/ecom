@@ -1,0 +1,31 @@
+/* OrderItem.module.css */
+.orderContainer {
+  display: flex; /* Aligne les éléments horizontalement */
+  justify-content: space-between; /* Met de l'espace entre les éléments */
+  align-items: center; /* Aligne les éléments verticalement */
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.orderDetails {
+  flex-grow: 1; /* Prend tout l'espace disponible à gauche */
+  margin-right: 1rem; /* Espace entre les détails et le bouton */
+}
+
+.buttonContainer {
+  text-align: right; /* Aligne le contenu du bouton à droite */
+}
+
+.paymentButton {
+  background-color: #3498db; /* Couleur du bouton de paiement */
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.paymentButton:hover {
+  background-color:  #3498db; /* Couleur du bouton au survol */
+}

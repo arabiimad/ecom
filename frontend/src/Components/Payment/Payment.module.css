@@ -1,0 +1,91 @@
+/* Payment.module.css */
+
+/* Container */
+.container {
+  display: block;
+  width: 100%;
+  height: auto;
+  font-family: 'Poppins', sans-serif;
+  text-align: center; /* Centre le contenu de .container */
+  padding: 2rem; /* Augmenté pour plus de confort */
+}
+
+/* Form Container */
+.paymentCard {
+  display: inline-block;
+  padding: 1.875rem; /* Taille similaire à formContainer */
+  background-color: #fff;
+  border-radius: 9px; /* Bordure arrondie similaire */
+  box-shadow: 0 11.25px 22.5px rgba(0, 0, 0, 0.1); /* Ombre similaire */
+  width: 100%;
+  max-width: 375px; /* Largeur maximale similaire */
+  margin: 0 auto; /* Centre le conteneur horizontalement */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition similaire */
+  text-align: left; /* Aligne le texte à gauche à l'intérieur de .paymentCard */
+}
+
+.paymentCard:hover {
+  transform: translateY(-6px); /* Effet de survol similaire */
+  box-shadow: 0 18.75px 37.5px rgba(0, 0, 0, 0.15); /* Ombre plus marquée au survol */
+}
+
+/* Form Group */
+.formGroup {
+  margin-bottom: 1.125rem; /* Espacement similaire */
+}
+
+.formGroup label {
+  display: block;
+  font-weight: 600;
+  color: #333;
+  font-size: 0.71rem; /* Taille de police similaire */
+  margin-bottom: 0.375rem; /* Espacement sous les labels */
+}
+
+.formGroup input {
+  width: 92%; /* Largeur ajustée */
+  padding: 0.875rem; /* Taille de padding similaire */
+  border-radius: 8px; /* Bordure arrondie similaire */
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  font-size: 1rem; /* Taille de police similaire */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transition similaire */
+}
+
+.formGroup input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 8px #165d8d; /* Ombre au focus similaire */
+  background-color: #fff;
+}
+
+/* Submit Button */
+.submitBtn {
+  display: block; /* Assure que le bouton occupe toute la largeur du conteneur */
+  width: 100%; /* Prend toute la largeur disponible */
+  max-width: 150px; /* Largeur maximale similaire */
+  margin: 0 auto;
+  background-color: #3498db; /* Couleur bleue comme dans le formulaire d'inscription */
+  color: white;
+  padding: 0.675rem 1.5rem; /* Taille de padding similaire */
+  border: none;
+  border-radius: 9px; /* Bordure arrondie similaire */
+  cursor: pointer;
+  font-size: 0.75rem; /* Taille de police similaire */
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.75px; /* Espacement des lettres similaire */
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Transition similaire */
+  box-shadow: 0 7.5px 15px rgba(0, 0, 0, 0.1); /* Ombre similaire */
+}
+
+.submitBtn:hover {
+  background-color: #2980b9; /* Couleur bleue légèrement plus foncée au survol */
+  transform: translateY(-3.75px); /* Effet de survol similaire */
+  box-shadow: 0 11.25px 22.5px rgba(0, 0, 0, 0.2); /* Ombre plus marquée au survol */
+}
+
+.submitBtn:active {
+  background-color: #3498db;
+  transform: translateY(0);
+}
