@@ -4,6 +4,7 @@ import InstrumentsImg from "../../assets/Instruments.png";
 import ConsumablesImg from "../../assets/Consumables.png";
 import EquipmentImg from "../../assets/Equipment.png";
 import ProstheticsImg from "../../assets/Prosthetics.png";
+
 const categories = [
   {
     name: "Instruments",
