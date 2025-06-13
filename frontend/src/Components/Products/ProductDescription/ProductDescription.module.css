@@ -13,7 +13,7 @@
   width: 100%;
   height: auto;
   max-height: 400px; /* Hauteur ajustée pour plus de flexibilité */
-  border: 1px solid #3498db; /* Bordure réduite et colorée pour correspondre au thème */
+  border: 1px solid #16a085; /* Bordure réduite et colorée pour correspondre au thème */
   border-radius: 5px; /* Coins légèrement arrondis */
 }
 
@@ -41,13 +41,13 @@
 }
 
 .red {
-  background-color: #e74c3c;
+  background-color: #e67e22;
   margin-left: 30PX;
   /* Couleur mise à jour pour correspondre au thème */
 }
 
 .capitalize {
-  color: #e74c3c; /* Couleur mise à jour pour correspondre au thème */
+  color: #e67e22; /* Couleur mise à jour pour correspondre au thème */
   text-transform: capitalize;
 }
 

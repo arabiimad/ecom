@@ -18,7 +18,7 @@
 }
 
 .paymentButton {
-  background-color: #3498db; /* Couleur du bouton de paiement */
+  background-color: #16a085; /* Couleur du bouton de paiement */
   color: white;
   border: none;
   padding: 0.5rem 1rem;
@@ -27,5 +27,5 @@
 }
 
 .paymentButton:hover {
-  background-color:  #3498db; /* Couleur du bouton au survol */
+  background-color:  #16a085; /* Couleur du bouton au survol */
 }

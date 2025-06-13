@@ -44,7 +44,7 @@ export default function ContactUs() {
     }
   };
   return (
-    <div className={classes.contactUs}>
+    <div className={classes.contactUs} data-aos="fade-up">
       <h1 className={`${classes.center} ${classes.heading}`}>
         <span className={classes.red}>Contact</span> Us
       </h1>

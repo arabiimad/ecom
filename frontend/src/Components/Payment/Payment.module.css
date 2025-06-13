@@ -54,7 +54,7 @@
 
 .formGroup input:focus {
   outline: none;
-  border-color: #3498db;
+  border-color: #16a085;
   box-shadow: 0 0 8px #165d8d; /* Ombre au focus similaire */
   background-color: #fff;
 }
@@ -65,7 +65,7 @@
   width: 100%; /* Prend toute la largeur disponible */
   max-width: 150px; /* Largeur maximale similaire */
   margin: 0 auto;
-  background-color: #3498db; /* Couleur bleue comme dans le formulaire d'inscription */
+  background-color: #16a085; /* Couleur bleue comme dans le formulaire d'inscription */
   color: white;
   padding: 0.675rem 1.5rem; /* Taille de padding similaire */
   border: none;
@@ -80,12 +80,12 @@
 }
 
 .submitBtn:hover {
-  background-color: #2980b9; /* Couleur bleue légèrement plus foncée au survol */
+  background-color: #12876f; /* Couleur bleue légèrement plus foncée au survol */
   transform: translateY(-3.75px); /* Effet de survol similaire */
   box-shadow: 0 11.25px 22.5px rgba(0, 0, 0, 0.2); /* Ombre plus marquée au survol */
 }
 
 .submitBtn:active {
-  background-color: #3498db;
+  background-color: #16a085;
   transform: translateY(0);
 }

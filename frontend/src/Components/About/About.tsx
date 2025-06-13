@@ -2,7 +2,7 @@ import classes from "./About.module.css";
 
 export default function About() {
   return (
-    <div className={classes.aboutContainer}>
+    <div className={classes.aboutContainer} data-aos="fade-up">
       <h1>À propos de DentaShop</h1>
       <p>
         DentaShop fournit depuis plus de 10&nbsp;ans du matériel et des
