@@ -1,6 +1,10 @@
 # DentaShop
 
+<<<<<<< 791xqo-codex/créer-un-site-web-complet-et-fonctionnel
 DentaShop est une plateforme e‑commerce dédiée aux fournitures dentaires. Le projet regroupe une interface React/TypeScript et plusieurs micro‑services Spring Boot (produits, commandes, utilisateurs…) orchestrés via Docker Compose. L'interface adopte désormais une palette turquoise et violette avec des animations fluides grâce à AOS.
+=======
+DentaShop est une plateforme e‑commerce dédiée aux fournitures dentaires. Le projet regroupe une interface React/TypeScript et plusieurs micro‑services Spring Boot (produits, commandes, utilisateurs…) orchestrés via Docker Compose.
+>>>>>>> main
 
 L'application propose une boutique en ligne avec gestion du panier, des commandes et un espace utilisateur. Une page "À propos" présente la société tandis qu'une page de contact permet d'envoyer des messages au support.
 
