@@ -73,7 +73,7 @@ input[type="password"] {
 input[type="email"]:focus,
 input[type="password"]:focus {
   outline: none;
-  border-color: #3498db;
+  border-color: #16a085;
   box-shadow: 0 0 6px #0b69a8; /* 0 0 8px reduced by 25% */
   background-color: #fff;
 }
@@ -83,7 +83,7 @@ input[type="password"]:focus {
   width: 100%; /* Prend toute la largeur disponible */
   max-width: 150px; /* Optionnel : ajuste la largeur maximale du bouton */
   margin: 0 auto;
-  background-color: #3498db;
+  background-color: #16a085;
   color: white;
   padding: 0.675rem 1.5rem; /* 0.9rem 2rem reduced by 25% */
   border: none;
@@ -98,13 +98,13 @@ input[type="password"]:focus {
 }
 
 .submitBtn:hover {
-  background-color: #3498db;
+  background-color: #16a085;
   transform: translateY(-3.75px); /* -5px reduced by 25% */
   box-shadow: 0 11.25px 22.5px rgba(0, 0, 0, 0.2); /* 0 15px 30px reduced by 25% */
 }
 
 .submitBtn:active {
-  background-color: #3498db;
+  background-color: #16a085;
   transform: translateY(0);
 }
 
@@ -114,7 +114,7 @@ input[type="password"]:focus {
 }
 
 .link {
-  color: #3498db;
+  color: #16a085;
   text-decoration: none;
   font-weight: bold;
 }
@@ -124,7 +124,7 @@ input[type="password"]:focus {
 }
 
 .active {
-  color: #3498db;
+  color: #16a085;
 }
 
 @media (max-width: 600px) {

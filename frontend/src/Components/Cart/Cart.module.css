@@ -46,11 +46,11 @@
 }
 
 .summary {
-  color: #3498db; /* Bleu ciel pour correspondre au thème */
+  color: #16a085; /* Bleu ciel pour correspondre au thème */
 }
 
 .checkoutBtn {
-  background-color: #3498db; /* Bleu ciel pour le bouton de paiement */
+  background-color: #16a085; /* Bleu ciel pour le bouton de paiement */
   color: #ffffff; /* Texte blanc pour contraster avec le fond */
   border: none;
   border-radius: 4px; /* Coins arrondis pour le bouton */
@@ -59,12 +59,12 @@
 }
 
 .red {
-  color: #e74c3c; /* Couleur rouge accentuée */
+  color: #e67e22; /* Couleur rouge accentuée */
 }
 
 .clear {
   margin-top: 1.5rem;
-  background-color: #e74c3c; /* Rouge pour le bouton Clear */
+  background-color: #e67e22; /* Rouge pour le bouton Clear */
   color: #ffffff; /* Texte blanc pour contraster avec le fond */
   border: none;
   border-radius: 4px; /* Coins arrondis pour le bouton */

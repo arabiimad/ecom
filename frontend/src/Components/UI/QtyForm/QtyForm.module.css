@@ -7,7 +7,7 @@
 .qtyBtn,
 .qtyInput {
   border-radius: 5px;
-  border: 2px solid #3498db;
+  border: 2px solid #16a085;
   padding: 0px 2rem;
 }
 
@@ -19,13 +19,13 @@
 .qtyBtn {
   background-color: white;
   font-weight: 550;
-  color:  #3498db;
+  color:  #16a085;
   font-size: 1rem;
   padding: 4px 15px;
 }
 .qtyBtn:hover {
   color: white;
-  background-color:  #3498db;
+  background-color:  #16a085;
 }
 
 .decreaseBtn {

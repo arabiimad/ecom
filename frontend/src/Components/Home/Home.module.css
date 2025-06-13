@@ -8,7 +8,7 @@
 .textContainer h1 {
   font-weight: 400;
   font-size: 3rem;
-  color: #3498db; /* Couleur de texte en accord avec la navbar */
+  color: #16a085; /* Couleur de texte en accord avec la navbar */
 }
 
 .textContainer p {
@@ -21,7 +21,7 @@
 .ctaButton {
   display: inline-block;
   margin-top: 1.5rem;
-  background-color: #3498db;
+  background-color: #16a085;
   color: #fff;
   padding: 0.75rem 1.5rem;
   border-radius: 4px;
@@ -30,7 +30,7 @@
 }
 
 .ctaButton:hover {
-  background-color: #2980b9;
+  background-color: #12876f;
   transform: translateY(-3px);
 }
 
@@ -43,7 +43,7 @@
 .cardArticle h2 {
   font-weight: 500;
   font-size: 2.5rem; /* Augmenter la taille de la police pour plus de visibilité */
-  color: #3498db; /* Couleur en accord avec la navbar */
+  color: #16a085; /* Couleur en accord avec la navbar */
   margin-bottom: 2rem;
 }
 
@@ -65,7 +65,7 @@
 .svgContainer {
   width: 2.5rem; /* Augmenter la taille pour plus de visibilité */
   height: 2.5rem;
-  background-color: #3498db; /* Couleur en accord avec la navbar */
+  background-color: #16a085; /* Couleur en accord avec la navbar */
   border-radius: 50%;
   margin: auto;
   margin-top: 1rem;
@@ -120,7 +120,7 @@
 .journalBtn {
   border-radius: 4px;
   padding: 1rem;
-  background-color: #3498db; /* Couleur en accord avec la navbar */
+  background-color: #16a085; /* Couleur en accord avec la navbar */
   text-transform: uppercase;
   color: #fff; /* Texte blanc pour contraster avec le fond */
   border: none;
@@ -128,7 +128,7 @@
 }
 
 .journalBtn:hover {
-  background-color: #2980b9; /* Couleur de survol en accord avec la navbar */
+  background-color: #12876f; /* Couleur de survol en accord avec la navbar */
 }
 
 .image {
@@ -137,7 +137,7 @@
   margin-left: auto;
   height: auto;
   border-radius: 5px;
-  border: 2px solid #3498db; /* Bordure en accord avec la navbar */
+  border: 2px solid #16a085; /* Bordure en accord avec la navbar */
 }
 
 .imageCaption {
@@ -147,7 +147,7 @@
 
 .read {
   font-weight: 800;
-  color: #e74c3c; /* Couleur rouge pour correspondre à la navbar */
+  color: #e67e22; /* Couleur rouge pour correspondre à la navbar */
 }
 
 .contactSection {
