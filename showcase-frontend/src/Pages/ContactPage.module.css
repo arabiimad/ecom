@@ -1,0 +1,163 @@
+.contactPage {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.pageHeader {
+  background-color: #f8f9fa; /* Very light grey, almost white */
+  padding: 2.5rem 2rem;
+  text-align: center;
+  border-bottom: 1px solid #dee2e6; /* Light border */
+  margin-bottom: 2.5rem;
+}
+
+.pageHeader h1 {
+  font-size: 2.6rem;
+  color: #343a40; /* Dark grey */
+  margin-bottom: 0.5rem;
+}
+
+.pageHeader p {
+  font-size: 1.1rem;
+  color: #6c757d; /* Medium grey */
+}
+
+.contactContentWrapper {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  gap: 2.5rem;
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin: 0 auto 2.5rem auto;
+}
+
+.contactFormSection {
+  flex: 2; /* Takes more space */
+  min-width: 300px; /* Minimum width before wrapping */
+}
+
+.contactDetailsSection {
+  flex: 1;
+  min-width: 280px;
+  background-color: #f9f9f9; /* Slightly off-white background */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.contactFormSection h2,
+.contactDetailsSection h2,
+.mapSection h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #007bff; /* Blue accent */
+  display: inline-block; /* So border only spans text width */
+}
+
+.contactForm .formGroup {
+  margin-bottom: 1.25rem;
+}
+
+.contactForm label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #495057;
+}
+
+.contactForm input[type="text"],
+.contactForm input[type="email"],
+.contactForm textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contactForm input[type="text"]:focus,
+.contactForm input[type="email"]:focus,
+.contactForm textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+.contactForm textarea {
+  resize: vertical; /* Allow vertical resize, not horizontal */
+}
+
+.submitButton {
+  background-color: #007bff;
+  color: white;
+  padding: 0.8rem 1.8rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submitButton:hover {
+  background-color: #0056b3; /* Darker blue */
+  transform: translateY(-2px);
+}
+
+.formGroupCheckbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.formGroupCheckbox input[type="checkbox"] {
+  margin-right: 0.75rem;
+  width: auto; /* Override default width for inputs if any */
+  height: auto; /* Override default height for inputs if any */
+}
+
+.checkboxLabel {
+  margin-bottom: 0; /* Override default label margin if any */
+  font-weight: normal; /* Make it less prominent than field labels */
+  color: #555;
+}
+
+.detailsGroup {
+  margin-bottom: 1.5rem;
+}
+
+.detailsGroup h3 {
+  font-size: 1.2rem;
+  color: #007bff; /* Blue accent */
+  margin-bottom: 0.5rem;
+}
+
+.detailsGroup p {
+  margin-bottom: 0.25rem;
+  color: #555;
+}
+
+.mapSection {
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin: 0 auto 2.5rem auto;
+  text-align: center;
+}
+
+.mapPlaceholder {
+  background-color: #e9ecef;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  color: #6c757d;
+}
+
+.mapPlaceholder img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 1rem;
+}

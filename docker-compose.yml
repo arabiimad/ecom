@@ -192,6 +192,65 @@ services:
     networks: [microservices-net]
     depends_on: [kafka, config-server, discovery-service]
 
+  # -------------------------------------------------------------------
+  # 3) FRONTEND APPLICATIONS
+  # -------------------------------------------------------------------
+  ecommerce-frontend:
+    container_name: ms_ecommerce_frontend
+    build:
+      context: ./frontend # Assumes Dockerfile exists in ./frontend
+      # dockerfile: Dockerfile # Optional: if your Dockerfile has a non-standard name
+    # If not building with Docker, but files are pre-built:
+    # image: alpine/git # Or any small image if just providing volumes
+    # working_dir: /app
+    # command: tail -f /dev/null # Keep container running if not serving
+    volumes:
+      - ./frontend/build:/app/frontend/build # Exposes build artifacts
+    networks: [microservices-net]
+    # No ports exposed here as Nginx will handle external access
+
+  showcase-frontend:
+    container_name: ms_showcase_frontend
+    build:
+      context: ./showcase-frontend # Assumes Dockerfile exists in ./showcase-frontend
+      # dockerfile: Dockerfile
+    volumes:
+      - ./showcase-frontend/build:/app/showcase-frontend/build # Exposes build artifacts
+    networks: [microservices-net]
+    # No ports exposed here
+
+  # -------------------------------------------------------------------
+  # 4) NGINX REVERSE PROXY
+  # -------------------------------------------------------------------
+  nginx-proxy:
+    container_name: ms_nginx_proxy
+    image: nginx:latest
+    ports:
+      - "80:80" # HTTP traffic
+      # - "443:443" # HTTPS traffic (if SSL is configured)
+    volumes:
+      # Mount the Nginx configuration file created in the previous step
+      # This config should point to /app/showcase-frontend/build and /app/frontend/build for roots
+      - ./nginx_config_yourdomain.conf:/etc/nginx/conf.d/default.conf:ro
+      # Mount the build artifacts from the frontend services
+      # Nginx needs to access these paths as defined in its configuration file's `root` directives.
+      # The paths used in nginx_config_yourdomain.conf were /app/showcase-frontend/build and /app/frontend/build
+      # So we ensure these are available inside the Nginx container.
+      # Note: If frontend services build into different paths within their containers, adjust accordingly.
+      # For simplicity, this example assumes the frontend services above make their builds available
+      # at paths that can be mounted directly or that Nginx can access via named volumes if more complex.
+      # However, the simplest is to ensure Nginx can see the build folders.
+      # The volume mounts in ecommerce-frontend & showcase-frontend services are for making those builds
+      # available to the Docker host/other containers. Nginx also needs them.
+      - ./showcase-frontend/build:/app/showcase-frontend/build:ro
+      - ./frontend/build:/app/frontend/build:ro
+    networks: [microservices-net]
+    depends_on:
+      - ecommerce-frontend # Ensures frontend builds are available (if build is part of service start)
+      - showcase-frontend  # Or remove if builds are done outside and folders always exist
+      # Add dependencies to backend services if Nginx also proxies API calls (not covered by current Nginx config)
+      # - gateway-service
+
 # -------------------------------------------------------------------
 # RÉSEAUX & VOLUMES
 # -------------------------------------------------------------------

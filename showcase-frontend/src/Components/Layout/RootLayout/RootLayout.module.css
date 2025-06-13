@@ -1,0 +1,10 @@
+.rootLayout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.mainContent {
+  flex: 1; /* Ensures the main content takes up available space, pushing footer down */
+  padding: 1rem; /* Add some padding around the content */
+}
