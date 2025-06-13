@@ -1,6 +1,4 @@
-This is a react ts e-commerce project.
-it uses firebase to sore user data.
-stores and updates the cart on firebase whenever the cart is changed.
-cart is different (specific) for every user.
-i used RTK for state management.
-It brings product data from the fakeproduct api.
+Front‑end React/TypeScript pour la boutique.
+Les utilisateurs de démonstration sont stockés via Firebase et chaque panier est synchronisé en temps réel.
+La gestion d'état s'appuie sur Redux Toolkit.
+Les données produits proviennent des micro‑services du projet.
