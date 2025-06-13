@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import classes from "./BrowseCategory.module.css";
 import OtherClothes from "../../assets/OtherClothes.jpg";
-import WomenClothes from "../../assets/WomenClothes.jpg";
+import WomenClothes from "../../assets/womenClothes.jpg";
 import MenClothes from "../../assets/MenClothes.jpg";
 import BabyClothes from "../../assets/BabyClothes.jpg";
 const categories = [

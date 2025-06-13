@@ -9,7 +9,7 @@ import { uiActions } from "../../store/ui-slice";
 import BrowseCategory from "../BrowseCategory/BrowseCategory";
 import { Order } from "../../types";
 import { useEffect } from "react";
-import { restoratUser } from "../../store/auth-slice";
+import { restoreUser } from "../../store/auth-slice";
 import { createOrder } from "../../Services/orderService";
 import { useNavigate } from "react-router-dom";
 
@@ -26,7 +26,7 @@ export default function Cart() {
 
   useEffect(() => {
     if (!user) {
-      dispatch(restoratUser());
+      dispatch(restoreUser());
     }
   }, [dispatch, user]);
 

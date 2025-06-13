@@ -32,7 +32,7 @@ export default function Footer() {
             Home
           </Link>
           <Link className={classes.link} to="/shop">
-            Shop
+            Boutique
           </Link>
           <Link className={classes.link} to="/auth">
             Login/Signup

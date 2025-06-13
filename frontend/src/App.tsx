@@ -11,7 +11,7 @@ import { AllProductsLoader } from "./Pages/AllProductsPage.tsx";
 import { singleProductLoader } from "./Pages/ProductDescriptionPage.tsx";
 import { cartLoader } from "./Pages/CartPage";
 import { useDispatch } from "react-redux";
-import { restoratUser } from "./store/auth-slice.tsx";
+import { restoreUser } from "./store/auth-slice.tsx";
 import { AppDispatch } from "./store/redux-store.tsx";
 import { PaymentLoader } from "./Pages/PaymentPage.tsx";
 import { OrderLoader } from "./Pages/OrderDetailsPage.tsx";
@@ -102,7 +102,7 @@ function App() {
 
   useEffect(() => {
     
-    dispatch(restoratUser());
+    dispatch(restoreUser());
   }, [dispatch]);
   return <RouterProvider router={router}></RouterProvider>;
 }

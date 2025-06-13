@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import { LoaderFunction } from "react-router-dom";
 import ProductDescription from "../Components/Products/ProductDescription/ProductDescription";
 
