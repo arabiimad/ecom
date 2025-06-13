@@ -63,7 +63,7 @@ input {
 
 input:focus {
   outline: none;
-  border-color: #3498db;
+  border-color: #16a085;
   box-shadow: 0 0 8px #165d8d;
   background-color: #fff;
 }
@@ -73,7 +73,7 @@ button {
   width: 100%; /* Prend toute la largeur disponible */
   max-width: 120px; /* Réduit la largeur maximale du bouton */
   margin: 1rem auto 0;
-  background-color: #3498db;
+  background-color: #16a085;
   color: white;
   padding: 0.5rem 1.2rem; /* Réduit le padding pour un bouton plus compact */
   border: none;
@@ -88,13 +88,13 @@ button {
 }
 
 button:hover {
-  background-color: #2980b9;
+  background-color: #12876f;
   transform: translateY(-3px); /* Réduit le décalage au survol */
   box-shadow: 0 11.25px 22.5px rgba(0, 0, 0, 0.2);
 }
 
 button:active {
-  background-color: #3498db;
+  background-color: #16a085;
   transform: translateY(0);
 }
 
