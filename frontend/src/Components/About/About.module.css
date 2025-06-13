@@ -3,16 +3,12 @@
   margin: 2rem auto;
   line-height: 1.6;
   padding: 0 1rem;
-<<<<<<< 791xqo-codex/créer-un-site-web-complet-et-fonctionnel
   animation: fadeInUp 0.6s ease both;
-=======
->>>>>>> main
 }
 
 .aboutContainer h1 {
   text-align: center;
   margin-bottom: 1.5rem;
-<<<<<<< 791xqo-codex/créer-un-site-web-complet-et-fonctionnel
   color: #16a085;
 }
 
@@ -25,7 +21,4 @@
     opacity: 1;
     transform: translateY(0);
   }
-=======
-  color: #3498db;
->>>>>>> main
 }
