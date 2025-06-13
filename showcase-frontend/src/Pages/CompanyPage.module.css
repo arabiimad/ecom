@@ -1,0 +1,156 @@
+.companyPage {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.7;
+}
+
+.pageHeader {
+  background: linear-gradient(to right, #6a11cb, #2575fc); /* Vibrant gradient */
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  animation: slideInFromTop 0.8s ease-out;
+}
+
+.pageHeader h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.pageHeader p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.companySection {
+  padding: 2.5rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto 2.5rem auto; /* Centered with bottom margin */
+  border-bottom: 1px solid #eee;
+}
+
+.companySection:last-child {
+  border-bottom: none;
+}
+
+.sectionContent h2 {
+  font-size: 2rem;
+  color: #2c3e50; /* Dark blue-grey */
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.sectionContent h2::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #2575fc; /* Blue from gradient */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.sectionContent p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.aboutUsSection ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.aboutUsSection li {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.aboutUsSection li::before {
+  content: '✔'; /* Checkmark icon */
+  color: #2575fc;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* Team Section Specifics */
+.teamSection h2::after {
+   background-color: #6a11cb; /* Purple from gradient */
+}
+.teamIntro {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #444;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.teamMemberCard {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.teamMemberCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.teamMemberImagePlaceholder {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  margin: 0 auto 1rem auto;
+  /* In a real app, this would be an <img> tag */
+  background-image: url('https://via.placeholder.com/100x100.png?text=Person');
+  background-size: cover;
+  background-position: center;
+}
+
+.teamMemberCard h3 {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 0.25rem;
+}
+
+.teamMemberCard p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0;
+}
+
+/* History Section Specifics */
+.historySection p {
+  font-size: 1.05rem;
+  text-indent: 2em; /* Indent first line for a narrative feel */
+}
+.historySection h2::after {
+  background-color: #2575fc; /* Blue from gradient */
+}
+
+/* Animation for page header */
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
