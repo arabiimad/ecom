@@ -27,3 +27,17 @@ VALUES
     (nextval('product_seq'), 'Prefabricated anterior crowns', 'Temporary Crown', 60, 34.99, 'C:\\JAVA_PROJECT\\images\\18.jpg', 151),
     (nextval('product_seq'), 'Modeling wax 500g', 'Wax Sheet', 50, 9.99, 'C:\\JAVA_PROJECT\\images\\19.jpg', 151),
     (nextval('product_seq'), 'Semi-adjustable articulator', 'Articulator', 30, 249.99, 'C:\\JAVA_PROJECT\\images\\20.jpg', 151);
+-- Additional inventory for better catalog diversity
+(nextval('product_seq'), 'Titanium implant driver', 'Implant Driver', 40, 59.99, 'C:\\JAVA_PROJECT\\images\\21.jpg', 1),
+(nextval('product_seq'), 'Stainless steel bone chisel 3mm', 'Bone Chisel', 60, 39.99, 'C:\\JAVA_PROJECT\\images\\22.jpg', 1),
+
+(nextval('product_seq'), 'Rubber dam sheets (pack of 36)', 'Rubber Dam', 80, 14.99, 'C:\\JAVA_PROJECT\\images\\23.jpg', 51),
+(nextval('product_seq'), 'Disposable saliva ejectors (100 pcs)', 'Saliva Ejectors', 200, 5.99, 'C:\\JAVA_PROJECT\\images\\24.jpg', 51),
+
+(nextval('product_seq'), 'Portable LED curing light', 'Curing Light', 15, 149.99, 'C:\\JAVA_PROJECT\\images\\25.jpg', 101),
+(nextval('product_seq'), 'Dental compressor oil-free', 'Compressor', 8, 699.99, 'C:\\JAVA_PROJECT\\images\\26.jpg', 101),
+
+(nextval('product_seq'), 'Orthodontic plier set (4 pcs)', 'Ortho Pliers', 25, 119.99, 'C:\\JAVA_PROJECT\\images\\27.jpg', 151),
+(nextval('product_seq'), 'Vacuum forming sheets 1mm (box of 50)', 'Thermoforming Sheets', 50, 34.99, 'C:\\JAVA_PROJECT\\images\\28.jpg', 151),
+(nextval('product_seq'), 'Adjustable facebow', 'Facebow', 10, 179.99, 'C:\\JAVA_PROJECT\\images\\29.jpg', 151),
+(nextval('product_seq'), 'Dental plaster 25kg', 'Model Plaster', 30, 29.99, 'C:\\JAVA_PROJECT\\images\\30.jpg', 151);

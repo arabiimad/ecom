@@ -25,3 +25,6 @@ L'application propose une boutique en ligne avec gestion du panier, des commande
    ```
 
 The front‑end is served at `http://localhost:5173` by default and provides a small showcase page with a link to the boutique.
+
+## Additional sample data
+The product service now seeds the database with an extended catalog of dental equipment. Recreate the containers or rerun the migrations to load the new entries, including implant drivers, rubber dam packs and orthodontic pliers.

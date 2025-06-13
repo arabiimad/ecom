@@ -15,9 +15,11 @@
   text-align: center;
 }
 
+
 .red {
   color: #16a085;
 }
+
 
 .blue {
   color: #16a085;
@@ -40,6 +42,7 @@
 .formContainer {
   width: 40%;
 }
+
 
 .icon {
   max-height: 1.5rem;
