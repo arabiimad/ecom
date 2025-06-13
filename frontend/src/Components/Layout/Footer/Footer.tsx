@@ -22,7 +22,7 @@ export default function Footer() {
     <footer className={classes.footer}>
       <h1 className={classes.h1}>
         <Link to="/" className={`${classes.link} ${classes.compName}`}>
-          E-<span className={classes.red}>Commerce</span>
+          Denta<span className={classes.red}>Shop</span>
         </Link>
       </h1>
       <div className={classes.upperContainer}>
@@ -32,13 +32,13 @@ export default function Footer() {
             Home
           </Link>
           <Link className={classes.link} to="/shop">
-            Shop
+            Boutique
           </Link>
           <Link className={classes.link} to="/auth">
             Login/Signup
           </Link>
-          <Link className={classes.link} to="/contactUs">
-            Contact Us
+          <Link className={classes.link} to="/#contact">
+            Contact
           </Link>
         </div>
         <div className={classes.links}>
@@ -46,7 +46,7 @@ export default function Footer() {
           <Link className={classes.link} to="">
             Company Policy
           </Link>
-          <Link className={classes.link} to="/contactUs">
+          <Link className={classes.link} to="/#contact">
             Terms & Conditions
           </Link>
           <Link className={classes.link} to="/shop">

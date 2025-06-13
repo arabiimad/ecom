@@ -23,10 +23,10 @@ create sequence if not exists product_seq increment by 50;
 
 INSERT INTO category (id, description, name)
 VALUES
-    (nextval('category_seq'), 'Clothing items for men', 'Men Clothes'),
-    (nextval('category_seq'), 'Clothing items for women', 'Women Clothes'),
-    (nextval('category_seq'), 'Clothing items for babies', 'Baby Clothes'),
-    (nextval('category_seq'), 'Other types of clothing', 'Other Clothes');
+    (nextval('category_seq'), 'Hand instruments for dental practice', 'Instruments'),
+    (nextval('category_seq'), 'Single-use and daily consumables', 'Consumables'),
+    (nextval('category_seq'), 'Large and small equipment', 'Equipment'),
+    (nextval('category_seq'), 'Prosthetic laboratory supplies', 'Prosthetics');
 
 
 

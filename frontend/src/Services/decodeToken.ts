@@ -2,7 +2,7 @@ import { jwtDecode } from 'jwt-decode';
 
 interface DecodedToken {
   exp?: number; // Marked optional to handle undefined case
-  [key: string]: any;
+  [key: string]: unknown;
 }
 
 export const isTokenExpired = (token: string): boolean => {

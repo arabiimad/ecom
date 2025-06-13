@@ -4,8 +4,8 @@ import classes from "./Home.module.css";
 
 import ceSvg from "../../assets/quality.svg";        // à remplacer par un pictogramme CE
 import truckSvg from "../../assets/car.svg";        // livraison
-import supportSvg from "../../assets/support.svg";  // crée ou importe un SVG
-import stockSvg from "../../assets/stock.svg";      // stock réel
+import supportSvg from "../../assets/person.svg";  // placeholder icon for support
+import stockSvg from "../../assets/restocking.jpg";      // placeholder stock
 
 import BrowseCategory from "../BrowseCategory/BrowseCategory";
 
@@ -49,8 +49,8 @@ export default function Home() {
           disponible en un clic et conforme aux normes européennes.
         </p>
 
-        {/* CTA vers la boutique (respecte ton basename “/E-commerce”) */}
-        <a href="/E-commerce/shop" className={classes.ctaButton}>
+        {/* CTA vers la boutique */}
+        <a href="/shop" className={classes.ctaButton}>
           Accéder à la boutique
         </a>
       </section>
