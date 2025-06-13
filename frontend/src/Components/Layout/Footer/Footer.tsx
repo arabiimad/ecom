@@ -34,10 +34,10 @@ export default function Footer() {
           <Link className={classes.link} to="/shop">
             Boutique
           </Link>
-          <Link className={classes.link} to="/auth">
-            Login/Signup
+          <Link className={classes.link} to="/about">
+            À propos
           </Link>
-          <Link className={classes.link} to="/#contact">
+          <Link className={classes.link} to="/contact">
             Contact
           </Link>
         </div>
@@ -46,7 +46,7 @@ export default function Footer() {
           <Link className={classes.link} to="">
             Company Policy
           </Link>
-          <Link className={classes.link} to="/#contact">
+          <Link className={classes.link} to="/contact">
             Terms & Conditions
           </Link>
           <Link className={classes.link} to="/shop">
@@ -72,15 +72,7 @@ export default function Footer() {
         </div>
       </div>
       <hr className={classes.divider} />
-      <p className={classes.credits}>
-        <a
-          className={classes.name}
-          href="https://github.com/ayoubTQ"
-          target="_blank"
-        >
-          AYOUB TAQI
-        </a>
-      </p>
+      <p className={classes.credits}>© 2024 DentaShop. Tous droits réservés.</p>
     </footer>
   );
 }

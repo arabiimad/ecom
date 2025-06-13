@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #3498db; /* Couleur de fond principale */
+  background-color: #16a085; /* Couleur de fond principale */
   padding: 1rem 2rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet de profondeur */
 }
@@ -16,7 +16,7 @@
 }
 
 .rgb {
-  color: #34495e; /* Couleur accentuée pour DentaShop */
+  color: #8e44ad; /* Couleur accentuée pour DentaShop */
 }
 
 .navMenu {
@@ -43,7 +43,7 @@
 }
 
 .active {
-  background-color: #2980b9; /* Couleur de fond pour l'élément actif */
+  background-color: #12876f; /* Couleur de fond pour l'élément actif */
 }
 
 .auth, .cart {
@@ -62,7 +62,7 @@
   position: absolute;
   top: -10px;
   right: -10px;
-  background-color: #e74c3c;
+  background-color: #e67e22;
   color: #ffffff;
   width: 20px;
   height: 20px;

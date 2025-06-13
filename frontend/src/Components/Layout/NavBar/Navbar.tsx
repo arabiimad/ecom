@@ -63,12 +63,26 @@ export default function Navbar() {
         >
           Boutique
         </NavLink>
-        <Link
-          className={`${classes.link} ${classes.navItem}`}
-          to="/#contact"
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? `${classes.active} ${classes.link} ${classes.navItem}`
+              : `${classes.link} ${classes.navItem}`
+          }
+          to="/about"
+        >
+          À propos
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? `${classes.active} ${classes.link} ${classes.navItem}`
+              : `${classes.link} ${classes.navItem}`
+          }
+          to="/contact"
         >
           Contact
-        </Link>
+        </NavLink>
 
         {user && (
         <NavLink
