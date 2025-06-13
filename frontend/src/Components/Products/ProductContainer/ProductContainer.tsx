@@ -2,7 +2,7 @@ import { PropsWithChildren } from "react";
 import classes from "./ProductContainer.module.css";
 
 interface Props extends PropsWithChildren {
-  style?: {};
+  style?: React.CSSProperties;
 }
 
 export default function ProductContainer(props: Props) {

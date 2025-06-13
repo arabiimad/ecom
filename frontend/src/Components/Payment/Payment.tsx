@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 import { OrderResponse , PaymentRequest } from "../../types";
 import { createPayment } from "../../Services/orderService";
 import { uiActions } from "../../store/ui-slice";
-import { restoratUser } from "../../store/auth-slice";
+import { restoreUser } from "../../store/auth-slice";
 
 interface Props {
     orderId: number;
@@ -28,7 +28,7 @@ export default function PaymentPage({ orderId, order }: Props) {
 
     useEffect(() => {
         if (!user) {
-            dispatch(restoratUser());
+            dispatch(restoreUser());
         }
     }, [dispatch, user])
 
@@ -45,9 +45,8 @@ export default function PaymentPage({ orderId, order }: Props) {
                 orderReference: order.Reference,
                 customer: user
                   };
-            const paymentId  =  await createPayment(payment);
-
-            navigate("/orders/"+order.id+"/"+true);
+            await createPayment(payment);
+            navigate("/orders/" + order.id + "/" + true);
 
             dispatch(
                 uiActions.addNotification({

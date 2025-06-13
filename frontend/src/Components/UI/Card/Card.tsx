@@ -3,7 +3,7 @@ import classes from "./Card.module.css";
 
 interface Props extends PropsWithChildren {
   className?: string;
-  style?: {};
+  style?: React.CSSProperties;
 }
 
 export default function Card(props: Props) {
