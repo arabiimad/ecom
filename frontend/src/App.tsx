@@ -36,6 +36,14 @@ const router = createBrowserRouter(
           Component: lazy(() => import("./Pages/ContactUsPage")),
         },
         {
+          path: "/blog",
+          Component: lazy(() => import("./Pages/BlogListPage")),
+        },
+        {
+          path: "/blog/:articleId",
+          Component: lazy(() => import("./Pages/BlogDetailPage")),
+        },
+        {
           path: "/shop",
           loader: () => redirect("/shop/category/all"),
         },

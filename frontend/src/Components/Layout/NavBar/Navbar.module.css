@@ -3,9 +3,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #16a085; /* Couleur de fond principale */
+  background: linear-gradient(90deg, #16a085, #8e44ad);
   padding: 1rem 2rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet de profondeur */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .h1 {
@@ -43,7 +43,7 @@
 }
 
 .active {
-  background-color: #12876f; /* Couleur de fond pour l'élément actif */
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .auth, .cart {
