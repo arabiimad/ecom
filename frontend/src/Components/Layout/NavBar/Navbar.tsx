@@ -83,6 +83,16 @@ export default function Navbar() {
         >
           Contact
         </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? `${classes.active} ${classes.link} ${classes.navItem}`
+              : `${classes.link} ${classes.navItem}`
+          }
+          to="/blog"
+        >
+          Articles
+        </NavLink>
 
         {user && (
         <NavLink

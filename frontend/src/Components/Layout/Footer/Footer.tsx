@@ -40,6 +40,9 @@ export default function Footer() {
           <Link className={classes.link} to="/contact">
             Contact
           </Link>
+          <Link className={classes.link} to="/blog">
+            Articles
+          </Link>
         </div>
         <div className={classes.links}>
           <h3 className={classes.columnHeading}>Legal</h3>
